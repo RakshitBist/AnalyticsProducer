@@ -26,7 +26,7 @@ public class PublishService {
         map.put("userName", analyticsEventRequest.getUserName());
         map.put("deviceType", analyticsEventRequest.getDeviceType());
         map.put("browser", analyticsEventRequest.getBrowser());
-        map.put("timeStamp", analyticsEventRequest.getTimestamp());
+        map.put("timestamp", analyticsEventRequest.getTimestamp());
 
         kafkaPublisher.publish(TOPIC,appId,map);
 
